@@ -1,16 +1,12 @@
+"use client";
+
 import Link from "next/link";
-import { Suspense } from "react";
-import LandingContent from "./LandingContent";
+import { useSearchParams } from "next/navigation";
 
-export default function Landing() {
-  return (
-    <Suspense fallback={<LandingFallback />}>
-      <LandingContent />
-    </Suspense>
-  );
-}
+export default function LandingContent() {
+  const searchParams = useSearchParams();
+  const guestName = searchParams.get("to");
 
-function LandingFallback() {
   return (
     <section className="fixed inset-0 flex items-center justify-center bg-black text-white">
       <div className="flex flex-col items-center text-center px-6">
@@ -31,6 +27,11 @@ function LandingFallback() {
         <p className="text-sm text-gray-300 mb-1 font-playfair">Kepada Yth:</p>
 
         <p className="text-base font-playfair">Bapak/Ibu/Saudara/i</p>
+
+        {/* Guest name (ONLY if exists) */}
+        {guestName && (
+          <p className="text-lg font-playfair mt-1 mb-10">{guestName}</p>
+        )}
 
         {/* Button */}
         <Link
