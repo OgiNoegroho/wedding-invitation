@@ -14,7 +14,7 @@ export default function Hero() {
         transition={{ duration: 2, ease: "easeOut" }}
       >
         <Image
-          src="/hero.jpg"
+          src="/hero1.jpg"
           alt="Wedding Background"
           fill
           priority
