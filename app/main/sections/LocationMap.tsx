@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { MapPin, ExternalLink } from 'lucide-react'
+import { motion } from "framer-motion";
+import { MapPin, ExternalLink } from "lucide-react";
 
 export default function LocationMap() {
   return (
@@ -9,7 +9,7 @@ export default function LocationMap() {
       className="relative w-full bg-black py-32 px-4 overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       <div className="max-w-6xl mx-auto text-center text-white">
@@ -47,9 +47,10 @@ export default function LocationMap() {
         >
           {/* Map */}
           <iframe
-            src="https://www.google.com/maps?q=Jl.%20Kesuma%20Komplek%20Peputra%20Indah%20I%20Blok%20C%20No%2037%20Pekanbaru&t=k&z=16&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.686465336208!2d101.45935870000001!3d0.46581190000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5af165f33722f%3A0x1882ec9a9c18dbb1!2sFF85%2B8P7%2C%20Simpang%20Tiga%2C%20Bukit%20Raya%2C%20Pekanbaru%20City%2C%20Riau%2028288!5e0!3m2!1sen!2sid!4v1766653695123!5m2!1sen!2sid"
             className="w-full h-[480px] border-0 grayscale contrast-125 brightness-75"
             loading="lazy"
+            allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
           />
 
@@ -58,7 +59,7 @@ export default function LocationMap() {
             <motion.div
               initial={{ scale: 0, y: -20 }}
               whileInView={{ scale: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}
             >
               <MapPin className="h-12 w-12 text-red-500 drop-shadow-lg" />
@@ -74,8 +75,8 @@ export default function LocationMap() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Jl. Kesuma Komplek Peputra Indah I Blok C No 37,  
-          Simpang Tiga, Bukit Raya, Pekanbaru  
+          Jl. Kesuma Komplek Peputra Indah I Blok C No 37, Simpang Tiga, Bukit
+          Raya, Pekanbaru
           <br />
           <span className="italic">(Kediaman Mempelai Wanita)</span>
         </motion.p>
@@ -100,5 +101,5 @@ export default function LocationMap() {
         </motion.div>
       </div>
     </motion.section>
-  )
+  );
 }
