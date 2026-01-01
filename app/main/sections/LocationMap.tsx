@@ -47,10 +47,10 @@ export default function LocationMap() {
         >
           {/* Map */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.686465336208!2d101.45935870000001!3d0.46581190000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5af165f33722f%3A0x1882ec9a9c18dbb1!2sFF85%2B8P7%2C%20Simpang%20Tiga%2C%20Bukit%20Raya%2C%20Pekanbaru%20City%2C%20Riau%2028288!5e0!3m2!1sen!2sid!4v1766653695123!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3579.3348822608637!2d101.04969307496458!3d0.36451799963190645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMjEnNTIuMyJOIDEwMcKwMDMnMDguMiJF!5e1!3m2!1sid!2sid!4v1767243947730!5m2!1sid!2sid"
             className="w-full h-[480px] border-0 grayscale contrast-125 brightness-75"
-            loading="lazy"
             allowFullScreen
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
 
@@ -75,10 +75,9 @@ export default function LocationMap() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Jl. Kesuma Komplek Peputra Indah I Blok C No 37, Simpang Tiga, Bukit
-          Raya, Pekanbaru
+          Jl. Utama, Desa Batu Belah, Disamping Masjid Baiturrahman.
           <br />
-          <span className="italic">(Kediaman Mempelai Wanita)</span>
+          <span className="italic">(Kediaman Mempelai Pria)</span>
         </motion.p>
 
         {/* Button */}
@@ -90,7 +89,7 @@ export default function LocationMap() {
           viewport={{ once: true }}
         >
           <a
-            href="https://maps.google.com/?q=Jl.%20Kesuma%20Komplek%20Peputra%20Indah%20I%20Blok%20C%20No%2037%20Pekanbaru"
+            href="https://goo.gl/maps/zrumkZRqZJJ8ffqR6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm text-white backdrop-blur hover:bg-white/20 transition"

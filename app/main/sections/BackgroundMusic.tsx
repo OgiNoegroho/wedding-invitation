@@ -23,10 +23,13 @@ export default function BackgroundMusic() {
       } catch (error) {
         // autoplay blocked, wait for user interaction
         const startOnInteraction = () => {
-          audio.play().then(() => {
-            setIsPlaying(true);
-            localStorage.setItem("wedding-music-playing", "true");
-          }).catch(() => {});
+          audio
+            .play()
+            .then(() => {
+              setIsPlaying(true);
+              localStorage.setItem("wedding-music-playing", "true");
+            })
+            .catch(() => {});
           document.removeEventListener("click", startOnInteraction);
           document.removeEventListener("touchstart", startOnInteraction);
         };
@@ -74,12 +77,7 @@ export default function BackgroundMusic() {
 
   return (
     <>
-      <audio
-        ref={audioRef}
-        src="/music.mp3"
-        loop
-        preload="auto"
-      />
+      <audio ref={audioRef} src="/music.mp3" loop preload="auto" />
       {/* Music control button */}
       <button
         onClick={toggleMusic}

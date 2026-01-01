@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/footer1.jpg')" }}
+        style={{ backgroundImage: "url('/footer-bg.jpg')" }}
       />
 
       {/* Dark Overlay */}
@@ -27,7 +27,7 @@ export default function Footer() {
           className="text-4xl text-gray-200"
           initial={{ opacity: 0, scale: 0.6 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           ♥
@@ -53,9 +53,9 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-lg">Mega &amp; Ilham</p>
-          <p className="text-sm">28 Desember 2025</p>
+          <p className="text-sm">3 Januari 2026</p>
         </motion.div>
       </div>
     </motion.section>
-  )
+  );
 }
